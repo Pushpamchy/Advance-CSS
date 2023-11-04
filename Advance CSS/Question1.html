@@ -1,0 +1,32 @@
+<!-- In CSS, the var() function is used to define and use custom properties, also known as CSS variables. CSS variables allow you to store and reuse values throughout your stylesheets. They enhance maintainability and flexibility by enabling you to change the value of a property in one place, and have that change automatically reflect across all instances where the variable is used. This can be particularly useful for theming and responsive design. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .root {
+            --primary-color: #00b7ff;
+            --secondary-color: #6c757d;
+            --color: white;
+        }
+        .obj {
+            padding: 4px 17px 4px 17px;
+            color: var(--color);
+        }
+        .obj1 {
+            background-color: var(--primary-color);
+        }
+        .obj2 {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body class="root">
+    <button class="obj obj1">Primary Button</button>
+    <button class="obj obj2">Secondary Button</button>
+</body>
+</html>
